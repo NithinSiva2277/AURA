@@ -1,0 +1,12 @@
+numpy
+pandas
+scipy
+torch
+transformers
+langchain
+langchain-community
+langchain-ollama
+fastapi
+uvicorn
+requests
+pydantic

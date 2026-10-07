@@ -1,0 +1,22 @@
+{
+  "clusters": [
+    {
+      "id": 1,
+      "cpu_capacity": 0.5,
+      "memory_capacity": 0.03085,
+      "total_machines": 6,
+      "avg_time_per_task_ms": 1417500,
+      "task_type": "tiny",
+      "mi_range": [15000, 55000]
+    },
+    {
+      "id": 7,
+      "cpu_capacity": 1.0,
+      "memory_capacity": 1.0,
+      "total_machines": 2218,
+      "avg_time_per_task_ms": 2178.14,
+      "task_type": "huge",
+      "mi_range": [150000, 337500]
+    }
+  ]
+}
