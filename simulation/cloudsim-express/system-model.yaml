@@ -1,0 +1,43 @@
+simulation:
+  duration: 1000.0
+
+# Provide a flat string to a guaranteed valid path
+extensions: "."
+
+datacenters:
+  - id: "Google_Cloud_Datacenter_1"
+    arch: "x86"
+    os: "Linux"
+    vmm: "Xen"
+    hosts:
+      - id: 0
+        pes: 32
+        mips: 1000000
+        ram: 20480
+        storage: 1000000
+        bw: 10000
+
+brokers:
+  - id: "LLM_SARSA_AI_Broker"
+    scheduler: "com.llm_sarsa.LLMSARSAScheduler"
+    vms:
+      - id: 0
+        pes: 4
+        mips: 50000
+        ram: 512
+        bw: 1000
+      - id: 1
+        pes: 2
+        mips: 25000
+        ram: 512
+        bw: 1000
+      - id: 2
+        pes: 2
+        mips: 5000
+        ram: 512
+        bw: 1000
+      - id: 3
+        pes: 1
+        mips: 100
+        ram: 512
+        bw: 1000
